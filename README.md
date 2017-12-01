@@ -1,6 +1,6 @@
-# DogZ or Catz
-_____
-### The most useless web site using Auth0 webtask that's let you choose between Dog or Cat gifs.
+# DogZ or CatZ
+
+### The most useless website using Auth0 webtask that's let you choose between Dog or Cat gifs.
 
 To make it run localy
 ```
@@ -22,5 +22,7 @@ Then:
 ```
 
 ### The mail is triggered thank a Webtask
-### You can look at the code inside the `./back` folder.
-I had to upload the code with the option `--secret` for the sender account to not expose my password. So if you want to make it run on your own `sandbox` you need the configuration of `const transporter` (line 19/27) then run `wt create --secret EMAIL_PWD=Y0ur_S3cuR3_P4ssVV0r|) sendMail.js`
+#### You can look at the code inside the `./back` folder.
+I had to upload the code with the option `--secret` for the sender mail account to not expose my password. So if you want to make it run on your own `sandbox` you need to change the configuration of `const transporter` object (around line 19/27) then run :
+
+`wt create --secret EMAIL_PWD=Y0ur_S3cuR3_P4ssVV0r|) sendMail.js`
